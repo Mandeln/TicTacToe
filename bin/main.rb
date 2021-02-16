@@ -14,30 +14,43 @@
 # When one of the winning combinations is matched, player wins
 # Print a statement concluding the game result
 
-winningCombinations = true
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+def game_board(board)
+    puts " #{board[0]} | #{board[1]} | #{board[2]} "
+    puts "-----------"
+    puts " #{board[3]} | #{board[4]} | #{board[5]} "
+    puts "-----------"
+    puts " #{board[6]} | #{board[7]} | #{board[8]} "
+end
 
-while winningCombinations == false
-  puts 'Please enter a number from 1-9'
-  number = gets.chomp
-  if winningCombinations == 1
+winning_combinations = true
+
+while winning_combinations == false
+  if winning_combinations == 1
     puts "Congratulations #{player_win}"
     break
-  elsif winningCombinations == 2
+  elsif winning_combinations == 2
     puts "It's a draw!"
   else
     puts "Unfortunately neither #{player1} nor #{player2} has won. Why not try again?"
   end
 end
 
-def moves(moves)
-  case moves
-  when 9.. then 'This is an invalid number'
-  when ..1 then 'This is an invalid number'
-  else 'It is now the next players move'
-  end
+def player_moves
+  puts 'Please enter a number from 1-9'
+    number = false
+    while number == false
+       number = gets.chomp
+       if number.to_i.between?(1, 9)
+         game_board(board)
+         puts 'Next players turn'
+         number = true
+        else
+          puts 'Enter a valid number'
+          number = false
+        end
+    end
 end
-
-
 
 # Section 1 - Printed statements
 
@@ -62,10 +75,7 @@ gets.chomp
 puts "#{player1} you may go first."
 # Random player is chosen to start the game.
 
-puts 'Please enter your move: '
-player_move = gets.chomp
-
-puts moves(player_move)
+puts player_moves
 # Player enters number. The relevant space on the board is filled with X or O
 
 # Show board
@@ -73,10 +83,7 @@ puts moves(player_move)
 puts "#{player2} it is your turn."
 # Random player is chosen to start the game.
 
-puts 'Please enter your move: '
-player_move = gets.chomp
-
-puts moves(player_move)
+puts player_moves
 # Player enters number. The relevant space on the board is filled with X or O
 
 # Show board
