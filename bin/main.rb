@@ -14,6 +14,31 @@
 # When one of the winning combinations is matched, player wins
 # Print a statement concluding the game result
 
+winningCombinations = true
+
+while winningCombinations == false
+  puts 'Please enter a number from 1-9'
+  number = gets.chomp
+  if winningCombinations == 1
+    puts "Congratulations #{player_win}"
+    break
+  elsif winningCombinations == 2
+    puts "It's a draw!"
+  else
+    puts "Unfortunately neither #{player1} nor #{player2} has won. Why not try again?"
+  end
+end
+
+def moves(moves)
+  case moves
+  when 9.. then 'This is an invalid number'
+  when ..1 then 'This is an invalid number'
+  else 'It is now the next players move'
+  end
+end
+
+
+
 # Section 1 - Printed statements
 
 puts 'Hello Player 1. Please enter your username here:'
@@ -37,8 +62,10 @@ gets.chomp
 puts "#{player1} you may go first."
 # Random player is chosen to start the game.
 
-puts 'Please enter a number from 1-9'
-gets.chomp
+puts 'Please enter your move: '
+player_move = gets.chomp
+
+puts moves(player_move)
 # Player enters number. The relevant space on the board is filled with X or O
 
 # Show board
@@ -46,8 +73,10 @@ gets.chomp
 puts "#{player2} it is your turn."
 # Random player is chosen to start the game.
 
-puts 'Please enter a number from 1-9'
-gets.chomp
+puts 'Please enter your move: '
+player_move = gets.chomp
+
+puts moves(player_move)
 # Player enters number. The relevant space on the board is filled with X or O
 
 # Show board
