@@ -1,20 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Enumerables
-In this project, we have implemented our version of Ruby’s enumerable methods.
-
-## Enumerable Methods List:
-
-- my_each
-- my_each_with_index
-- my_select
-- my_all?
-- my_any?
-- my_none?
-- my_count
-- my_map
-- my_inject
-- multiply_els
+# Tic Tac Toe
+In this project, we have implemented our version of Tic Tac Toe.
 
 <img align="right" alt="" height="300px" src="./screenshot.png" />
 
@@ -30,12 +17,10 @@ In this project, we have implemented our version of Ruby’s enumerable methods.
 
 __Clone the repo to your local machine using the terminal__:
 ```
-$ git clone https://github.com/CacheMeGifYouCan/Enumerables-Project
+$ git clone https://github.com/CacheMeGifYouCan/TicTacToe
 ```
 
-1. Navigate into the project directory `cd enumerables`
-2. Run the project `ruby enumerables.rb`
-3. Run the project `ruby enumerables.rb`
+1. Navigate into the project directory `cd TicTacToe`
 
 
 ## Authors
@@ -49,18 +34,13 @@ $ git clone https://github.com/CacheMeGifYouCan/Enumerables-Project
 
 ### Author 2
 
-👤 **Salley**
-
-- GitHub: [@JuxSalley](https://github.com/juxsalley)
-- Twitter: [__salley](https://twitter.com/__salley)
-- LinkedIn: [dev salley](https://www.linkedin.com/in/dev-salley/)
 
 
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/CacheMeGifYouCan/Enumerables-Project/issues)
+Feel free to check the [issues page](https://github.com/CacheMeGifYouCan/TicTacToe/issues)
 
 ## 📝 License
 
