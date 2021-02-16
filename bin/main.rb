@@ -38,7 +38,7 @@ puts "#{player1} you may go first."
 # Random player is chosen to start the game.
 
 puts 'Please enter a number from 1-9'
-number = gets.chomp
+gets.chomp
 # Player enters number. The relevant space on the board is filled with X or O
 
 # Show board
@@ -47,7 +47,7 @@ puts "#{player2} it is your turn."
 # Random player is chosen to start the game.
 
 puts 'Please enter a number from 1-9'
-number = gets.chomp
+gets.chomp
 # Player enters number. The relevant space on the board is filled with X or O
 
 # Show board
